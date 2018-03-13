@@ -1,20 +1,18 @@
-var request = require('request');
-var Promise = require('bluebird');
-var reqpromise = require('request-promise');
+const request = require('superagent');
 
 
-var URI_CONVERSATIONS = "https://conv-a.wbx2.com/conversation/api/v1/conversations/";
-var URI_LOCUS = "https://locus-a.wbx2.com/locus/api/v1/loci/";
-var URI_LOCUS_MEETINGINFO = "/meetingInfo";
+const URI_CONVERSATIONS = "https://conv-a.wbx2.com/conversation/api/v1/conversations/";
+const URI_LOCUS = "https://locus-a.wbx2.com/locus/api/v1/loci/";
+const URI_LOCUS_MEETINGINFO = "/meetingInfo";
 
 
 module.exports = {
-  getConversationsDetail : getConversationsDetail,
-  getLocusMeetingInfo : getLocusMeetingInfo,
-  getSparkURI : getSparkURI,
-  roomToConversationID : roomToConversationID,
-  getRoomMeetingInfo : getRoomMeetingInfo,
-  locusUrlToId : locusUrlToId
+  getConversationsDetail,
+  getLocusMeetingInfo,
+  getSparkURI,
+  roomToConversationID,
+  getRoomMeetingInfo,
+  locusUrlToId
 }
 
 
@@ -24,59 +22,52 @@ module.exports = {
  * returns - Promise which resolves to JSON response data or rejects on error
  */
 
-function getConversationsDetail  (roomID, authToken) {
+function getConversationsDetail(roomID, authToken) {
   return getSparkURI(URI_CONVERSATIONS + roomToConversationID(roomID), authToken);
 }
 
-/*
+/* 
  * locusID - Spark LocusID
  * authToken - bearer token for Spark Authorization
  * returns - Promise which resolves to JSON response data or rejects on error
  */
 
-function getLocusMeetingInfo (locusID, authToken) {
+function getLocusMeetingInfo(locusID, authToken) {
   return getSparkURI(URI_LOCUS + locusID + URI_LOCUS_MEETINGINFO, authToken);
 }
 
-/*
- * roomID - Spark RoomID
- * authToken - bearer token for Spark Authorization
- * returns - Promise which resolves to JSON response data or rejects on error
- */
 
-function getRoomMeetingInfo(roomID, authToken) {
-  return new Promise(
-    function(resolve, reject) {
-      getConversationsDetail(roomID, authToken)
-      .then(json => {
-        resolve(getLocusMeetingInfo(locusUrlToId(json.locusUrl), authToken));
-      })
-      .catch(err => console.log(err))
-    }
-  )
+/**
+ * Pass Room ID & Bearer Token
+ * 
+ * @param {any} roomID Spark RoomID
+ * @param {any} authToken bearer token for Spark Authorization
+ * @returns {Promise} Promise which resolves to JSON response data or rejects on error
+ */
+async function getRoomMeetingInfo(roomID, authToken) {
+  let json = await getConversationsDetail(roomID, authToken)
+  return getLocusMeetingInfo(locusUrlToId(json.locusUrl), authToken);
 }
 
 
-
-/*
- *
+/**
+ * Main helepr function to construct HTTP request
+ * 
+ * @param {string} uriString URI to request
+ * @param {string} authToken CiscoSpark Access Token
+ * @returns {object} Request Response Body
  */
-function getSparkURI(uriString, authToken) {
-  return new Promise(
-    function(resolve, reject) {
-      reqpromise({
-        uri: uriString,
-        headers: { 'Authorization' : `Bearer ${authToken}` },
-        json: true
-      })
-      .then(function (json) {
-        resolve(json);
-      })
-      .catch(function (err) {
-        reject(err);
-      });
-    }
-  );
+async function getSparkURI(uriString, authToken) {
+  try {
+    let response = await request
+      .get(uriString)
+      .set('Authorization', `Bearer ${authToken}`)
+      .set('Accept', 'application/json')
+    return response.body
+  }
+  catch (error) {
+    console.error(error)
+  }
 }
 
 
@@ -89,16 +80,18 @@ function locusUrlToId(locusUrl) {
  * roomID - Spark Room/Space ID
  * returns - Spark Conversation ID (UUID)
  */
-function roomToConversationID (roomID) {
+function roomToConversationID(roomID) {
   decoded = decodeBase64(roomID);
   idIndex = decoded.lastIndexOf('/') + 1;
-  return decoded.slice(idIndex,decoded.length);
+  return decoded.slice(idIndex, decoded.length);
 }
 
-/*
- * b64 - base64 encoded string
- * returns - base64 decode of b64
+/**
+ * 
+ * 
+ * @param {string} b64 
+ * @returns {string} Decoded base64
  */
-function decodeBase64 (b64) {
+function decodeBase64(b64) {
   return new Buffer(b64, 'base64').toString();
 }

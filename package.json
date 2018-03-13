@@ -6,8 +6,10 @@
   "author": "ryweddle",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^3.4.7",
-    "request": "^2.79.0",
-    "request-promise": "^4.1.1"
+    "dotenv": "^5.0.1",
+    "superagent": "^3.8.2"
+  },
+  "scripts": {
+    "test": "node -r dotenv/config ./test/meetingInfo.js"
   }
 }
