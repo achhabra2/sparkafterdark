@@ -1,4 +1,3 @@
-var bodyParser = require("body-parser");
 var request = require('request');
 var Promise = require('bluebird');
 var reqpromise = require('request-promise');
