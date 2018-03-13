@@ -1,0 +1,13 @@
+{
+  "name": "sparkafterdark",
+  "version": "0.0.1",
+  "description": "Useful utilities for Cisco Spark",
+  "main": "sparkafterdark.js",
+  "author": "ryweddle",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  }
+}
