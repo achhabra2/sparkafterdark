@@ -2,10 +2,11 @@ require('dotenv/config');
 const chai = require('chai');
 chai.should();
 
-const SparkAfterDark = require('../src/sparkafterdark');
+const SparkAfterDark = require('../src/');
+const request = require('superagent');
 
-const ROOM_ID = 'Y2lzY29zcGFyazovL3VzL1JPT00vZDNmMmVjOTAtMjY0Mi0xMWU4LWJkZmItYzk4MDUzNGQxZmQw'
-const ACCESS_TOKEN = 'ZDc3MWZmMWMtNjA2ZC00ODc1LTljNDQtNzQxOGQwYzdjYWQyN2M0ZjdiN2EtY2U0'
+const ROOM_ID = process.env.ROOM_ID
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN
 
 
 describe('Spark After Dark Class', () => {
@@ -20,7 +21,8 @@ describe('Spark After Dark Class', () => {
   })
 
   it('Access token should be valid', () => {
-
+    return request.get('https://api.ciscospark.com/v1/people/me')
+      .set('Authorization', `Bearer ${ACCESS_TOKEN}`)
   })
 
   it('Should Get Room Meeting Info From Locus', async () => {
