@@ -1,0 +1,58 @@
+{
+  "id": "11",
+  "data": {
+    "activity": {
+      "id": "d971c9d0-4fb8-11e8-98c6-3b98511a9d24",
+      "objectType": "activity",
+      "url":
+        "https://conv-a.wbx2.com/conversation/api/v1/activities/d971c9d0-4fb8-11e8-98c6-3b98511a9d24",
+      "published": "2018-05-04T16:33:17.549Z",
+      "verb": "post",
+      "actor": {
+        "id": "8f01d745-81f4-465b-afe6-905b61065c75",
+        "objectType": "person",
+        "displayName": "Samurai (bot)",
+        "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+        "emailAddress": "samurai@sparkbot.io",
+        "entryUUID": "8f01d745-81f4-465b-afe6-905b61065c75",
+        "type": "ROBOT",
+        "entryEmail": "samurai@sparkbot.io"
+      },
+      "object": {
+        "objectType": "comment",
+        "content":
+          "<p><strong>Q - </strong> test question has been logged.</p>",
+        "displayName": "<strong>Q - </strong> test question has been logged. ",
+        "markdown":
+          "eyJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiZGlyIn0..dwxUBlQ_TpK7aluB.JNYy87w4Dnr3PLZhlvh9g1ptjNtSP8HVpu8LTcobRk7gtqpN6GHNxO0riOTyEPE3WoUQ1II.ohNFEZdF0LjZYrjWCasLYg"
+      },
+      "target": {
+        "id": "a37b94b1-d2d6-3768-9ce8-04b19b941f96",
+        "objectType": "conversation",
+        "url":
+          "https://conv-a.wbx2.com/conversation/api/v1/conversations/a37b94b1-d2d6-3768-9ce8-04b19b941f96",
+        "participants": { "items": [] },
+        "activities": { "items": [] },
+        "tags": ["ONE_ON_ONE"]
+      },
+      "encryptionKeyUrl":
+        "kms://cisco.com/keys/7f8bf80d-fa37-4179-8393-ef94dd41f840",
+      "vectorCounters": {
+        "sourceDC": "a6",
+        "counters": { "a1": 0, "a2": 0, "a6": 111 }
+      }
+    },
+    "eventType": "conversation.activity"
+  },
+  "timestamp": 1525451597585,
+  "trackingId": "spark-js-sdk_a7cd2c44-f1d2-48fd-9c5e-1b0042ce10da_11",
+  "alertType": "none",
+  "headers": {
+    "data.activity.target.lastReadableActivityDate": "2018-05-04T16:33:17.549Z",
+    "data.activity.target.lastSeenActivityDate": "2018-05-04T16:33:17.549Z",
+    "data.activity.target.lastSeenActivityUUID":
+      "d971c9d0-4fb8-11e8-98c6-3b98511a9d24"
+  },
+  "sequenceNumber": 16,
+  "filterMessage": false
+}

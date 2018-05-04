@@ -1,0 +1,55 @@
+{
+  "id": "5",
+  "data": {
+    "activity": {
+      "id": "57cd4010-4fc9-11e8-8b93-61c49ca4573b",
+      "objectType": "activity",
+      "url":
+        "https://conv-a.wbx2.com/conversation/api/v1/activities/57cd4010-4fc9-11e8-8b93-61c49ca4573b",
+      "published": "2018-05-04T18:31:21.489Z",
+      "verb": "unassignModerator",
+      "actor": {
+        "id": "d88bd75e-b8c3-48cf-abc7-5ec5cbc758ac",
+        "objectType": "person",
+        "displayName": "Aman Chhabra",
+        "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+        "emailAddress": "amachhab@cisco.com",
+        "entryUUID": "d88bd75e-b8c3-48cf-abc7-5ec5cbc758ac",
+        "type": "PERSON",
+        "entryEmail": "amachhab@cisco.com"
+      },
+      "object": {
+        "id": "d88bd75e-b8c3-48cf-abc7-5ec5cbc758ac",
+        "objectType": "person",
+        "displayName": "Aman Chhabra",
+        "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+        "emailAddress": "amachhab@cisco.com",
+        "entryUUID": "d88bd75e-b8c3-48cf-abc7-5ec5cbc758ac",
+        "type": "PERSON",
+        "entryEmail": "amachhab@cisco.com"
+      },
+      "target": {
+        "id": "cdd89a90-4aff-11e7-af0f-bf62e4939ba3",
+        "objectType": "conversation",
+        "url":
+          "https://conv-a.wbx2.com/conversation/api/v1/conversations/cdd89a90-4aff-11e7-af0f-bf62e4939ba3",
+        "participants": { "items": [] },
+        "activities": { "items": [] },
+        "tags": []
+      },
+      "vectorCounters": { "sourceDC": "a6", "counters": { "a6": 132, "a7": 0 } }
+    },
+    "eventType": "conversation.activity"
+  },
+  "timestamp": 1525458681547,
+  "trackingId": "CLIENT_94a209da-11ae-422d-a929-964058f9c204",
+  "alertType": "none",
+  "headers": {
+    "data.activity.target.lastReadableActivityDate": "2018-05-04T16:33:17.868Z",
+    "data.activity.target.lastSeenActivityDate": "2018-05-04T16:33:17.868Z",
+    "data.activity.target.lastSeenActivityUUID":
+      "d9a276c0-4fb8-11e8-8b93-61c49ca4573b"
+  },
+  "sequenceNumber": 20,
+  "filterMessage": false
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "id": "27185120-d3f9-11e4-b79a-77ef5026c95a",
+    "objectType": "conversation",
+    "url":
+      "https://conv-a.wbx2.com/conversation/api/v1/conversations/27185120-d3f9-11e4-b79a-77ef5026c95a",
+    "published": "2015-03-26T20:46:19.006Z",
+    "displayName": "Ask Webex Teams Features",
+    "summary":
+      "eyAiYWxnIjogImRpciIsICJlbmMiOiAiQTI1NkdDTSIsICJraWQiOiAiaHR0cHM6XC9cL2VuY3J5cHRpb24tYS53YngyLmNvbVwvZW5jcnlwdGlvblwvYXBpXC92MVwva2V5c1wvOGJjYjc1NGUtNWZkYS00MWI1LTgwMTgtODliZWQ5MWQyMGUyIiB9..z0waGKMtsr9gxCG5..63-WvrmBiV-KmmzySB0ruA",
+    "memberships": { "items": [] },
+    "participants": {
+      "items": [
+        {
+          "id": "da280adb-5959-47e6-a2a8-179b90426cf0",
+          "objectType": "person",
+          "displayName": "Conor Murphy",
+          "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+          "emailAddress": "conmurph@cisco.com",
+          "entryUUID": "da280adb-5959-47e6-a2a8-179b90426cf0",
+          "type": "PERSON",
+          "entryEmail": "conmurph@cisco.com"
+        },
+        {
+          "id": "2452e584-cb98-4553-bdf2-331e68a56ff6",
+          "objectType": "person",
+          "displayName": "Rich Bowen",
+          "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+          "emailAddress": "rkbowen@cisco.com",
+          "entryUUID": "2452e584-cb98-4553-bdf2-331e68a56ff6",
+          "type": "PERSON",
+          "entryEmail": "rkbowen@cisco.com"
+        }
+      ]
+    },
+    "activities": { "items": [] },
+    "tags": ["OPEN", "JOINED"],
+    "locusUrl":
+      "https://locus-a.wbx2.com/locus/api/v1/loci/7cf68d75-2e49-3945-b34c-15c006dd20f0",
+    "defaultActivityEncryptionKeyUrl":
+      "https://encryption-a.wbx2.com/encryption/api/v1/keys/8bcb754e-5fda-41b5-8018-89bed91d20e2",
+    "encryptionKeyUrl":
+      "https://encryption-a.wbx2.com/encryption/api/v1/keys/8bcb754e-5fda-41b5-8018-89bed91d20e2",
+    "conversationWebUrl":
+      "https://web.ciscospark.com/#/rooms/27185120-d3f9-11e4-b79a-77ef5026c95a",
+    "creatorUUID": "e5a3646f-20a9-422f-bd18-832abb77b2e4",
+    "lastRelevantActivityDate": "2018-04-17T23:26:38.777Z",
+    "lastRelevantActivityTtl": 604800,
+    "lastSeenActivityDate": "2018-05-01T20:40:48.267Z",
+    "team": {
+      "id": "70772ba0-df3f-11e5-861f-f926684ec571",
+      "objectType": "team",
+      "url":
+        "https://conv-a.wbx2.com/conversation/api/v1/teams/70772ba0-df3f-11e5-861f-f926684ec571",
+      "teamColor": "#F96C5E",
+      "conversations": { "items": [] },
+      "teamMembers": { "items": [] },
+      "generalConversationUuid": "70772ba0-df3f-11e5-861f-f926684ec571",
+      "archived": false
+    },
+    "lastReadableActivityDate": "2018-05-01T21:37:50.063Z",
+    "avatar": {
+      "objectType": "content",
+      "files": {
+        "items": [
+          {
+            "objectType": "file",
+            "url":
+              "https://files-api-a.wbx2.com/v1/spaces/83dda3ab-9e57-4d2b-8b12-916340825566/contents/fe72f2b1-6da3-4cfe-acbb-e8cdb49bffd2/versions/37d591c6a3e14938b82eaf61542352d6/bytes",
+            "fileSize": 10415,
+            "mimeType": "image/png",
+            "scr": {
+              "enc": "A256GCM",
+              "key": "4GBv2x2p6EcQNR36Rz4vrx2xGnlb5VimGU0UWXNCfh0",
+              "iv": "tWJFphmvUPGsSIjD",
+              "aad": "2018-04-18T18:05:22.059Z",
+              "loc":
+                "https://files-api-a.wbx2.com/v1/spaces/83dda3ab-9e57-4d2b-8b12-916340825566/contents/fe72f2b1-6da3-4cfe-acbb-e8cdb49bffd2/versions/37d591c6a3e14938b82eaf61542352d6/bytes",
+              "tag": "OQIJCaeV_VOU_t6BMpiYUg"
+            }
+          }
+        ]
+      },
+      "contentCategory": "images"
+    },
+    "avatarEncryptionKeyUrl":
+      "kms://cisco.com/keys/60a1e4bc-0fdf-42e6-8fdb-b073737bdf50",
+    "lastJoinedDate": "2017-06-18T20:16:30.665Z",
+    "kmsResourceObjectUrl":
+      "/resources/aHR0cHM6Ly9jb252LWEud2J4Mi5jb20vY29udmVyc2F0aW9uL2FwaS92MS9jb252ZXJzYXRpb25zLzI3MTg1MTIwLWQzZjktMTFlNC1iNzlhLTc3ZWY1MDI2Yzk1YQ==",
+    "aclUrl":
+      "https://acl-a.wbx2.com/acl/api/v1/acls/27185120-d3f9-11e4-b79a-77ef5026c95a",
+    "custodianOrg": {
+      "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+      "orgName": "Cisco Systems, Inc."
+    },
+    "retentionUrl":
+      "https://conv-a.wbx2.com/conversation/api/v1/retention/organization/1eb65fdf-9643-417f-9974-ad72cae0e10f",
+    "userPreferences": {},
+    "organizationPolicies": {
+      "items": [
+        {
+          "id": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+          "objectType": "organizationPolicy",
+          "displayName": "Cisco Systems, Inc.",
+          "role": "owner",
+          "access": { "read": "all", "delete": "all" },
+          "retentionUrl":
+            "https://conv-a.wbx2.com/conversation/api/v1/retention/organization/1eb65fdf-9643-417f-9974-ad72cae0e10f"
+        }
+      ]
+    }
+  },
+  {
+    "id": "d2fde090-9d0c-11e5-aeed-2176fdcd8a58",
+    "objectType": "conversation",
+    "url":
+      "https://conv-a.wbx2.com/conversation/api/v1/conversations/d2fde090-9d0c-11e5-aeed-2176fdcd8a58",
+    "published": "2015-12-07T18:03:30.969Z",
+    "displayName": "#webex4devs",
+    "memberships": { "items": [] },
+    "participants": {
+      "items": [
+        {
+          "id": "0604b3f9-463f-4ab5-a3e1-8bde3802b066",
+          "objectType": "person",
+          "displayName": "John Moen",
+          "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+          "emailAddress": "moen@cisco.com",
+          "entryUUID": "0604b3f9-463f-4ab5-a3e1-8bde3802b066",
+          "type": "PERSON",
+          "entryEmail": "moen@cisco.com"
+        },
+        {
+          "id": "e15c641e-6fcb-48cf-873e-5b437f26b6e7",
+          "objectType": "person",
+          "displayName": "Hemand Mohan",
+          "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+          "emailAddress": "hemmohan@cisco.com",
+          "entryUUID": "e15c641e-6fcb-48cf-873e-5b437f26b6e7",
+          "type": "PERSON",
+          "entryEmail": "hemmohan@cisco.com"
+        }
+      ]
+    },
+    "activities": { "items": [] },
+    "tags": [
+      "MUTED",
+      "LOCKED",
+      "MESSAGE_NOTIFICATIONS_OFF",
+      "MENTION_NOTIFICATIONS_ON"
+    ],
+    "locusUrl":
+      "https://locus-a.wbx2.com/locus/api/v1/loci/5048c826-2cb6-31c8-967e-d6461db6256f",
+    "defaultActivityEncryptionKeyUrl":
+      "https://encryption-a.wbx2.com/encryption/api/v1/keys/f208a8c7-793b-4ed8-b770-293e4d898ab7",
+    "encryptionKeyUrl":
+      "https://encryption-a.wbx2.com/encryption/api/v1/keys/f208a8c7-793b-4ed8-b770-293e4d898ab7",
+    "conversationWebUrl":
+      "https://web.ciscospark.com/#/rooms/d2fde090-9d0c-11e5-aeed-2176fdcd8a58",
+    "creatorUUID": "f5b36187-c8dd-4727-8b2f-f9c447f29046",
+    "lastRelevantActivityDate": "2017-06-29T15:16:15.925Z",
+    "lastRelevantActivityTtl": 604800,
+    "lastSeenActivityDate": "2018-05-01T19:10:46.115Z",
+    "lastReadableActivityDate": "2018-05-01T21:34:50.806Z",
+    "avatar": {
+      "objectType": "content",
+      "files": {
+        "items": [
+          {
+            "objectType": "file",
+            "url":
+              "https://files-api-a.wbx2.com/v1/spaces/da3eb15f-b2f3-4b36-8544-e2d8b58ba7c7/contents/3a0801b7-d04c-42ab-bd14-8454b9f6c5cf/versions/b67ecce2fcdb4dac84344f279e5f80fa/bytes",
+            "fileSize": 21658,
+            "mimeType": "image/png",
+            "scr": {
+              "enc": "A256GCM",
+              "key": "q_929dOemh9TfTfTa67o6mHNt0_AmKQA6BQwtjq6snY",
+              "iv": "-1AUU1i4GL9-OLfk",
+              "aad": "2018-04-18T17:06:59.038Z",
+              "loc":
+                "https://files-api-a.wbx2.com/v1/spaces/da3eb15f-b2f3-4b36-8544-e2d8b58ba7c7/contents/3a0801b7-d04c-42ab-bd14-8454b9f6c5cf/versions/b67ecce2fcdb4dac84344f279e5f80fa/bytes",
+              "tag": "jip-HH3wphWmVItLaN1S8A"
+            }
+          }
+        ]
+      },
+      "contentCategory": "images"
+    },
+    "avatarEncryptionKeyUrl":
+      "https://encryption-a.wbx2.com/encryption/api/v1/keys/f208a8c7-793b-4ed8-b770-293e4d898ab7",
+    "lastJoinedDate": "2016-03-11T20:47:08.474Z",
+    "kmsResourceObjectUrl":
+      "https://encryption-a.wbx2.com/encryption/api/v1/resources/e51415f8-c5c6-4f94-a2e5-a3cad910f3fb",
+    "aclUrl":
+      "https://acl-a.wbx2.com/acl/api/v1/acls/d2fde090-9d0c-11e5-aeed-2176fdcd8a58",
+    "custodianOrg": {
+      "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+      "orgName": "Cisco Systems, Inc."
+    },
+    "retentionUrl":
+      "https://conv-a.wbx2.com/conversation/api/v1/retention/organization/1eb65fdf-9643-417f-9974-ad72cae0e10f",
+    "userPreferences": {},
+    "organizationPolicies": {
+      "items": [
+        {
+          "id": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+          "objectType": "organizationPolicy",
+          "displayName": "Cisco Systems, Inc.",
+          "role": "owner",
+          "access": { "read": "all", "delete": "all" },
+          "retentionUrl":
+            "https://conv-a.wbx2.com/conversation/api/v1/retention/organization/1eb65fdf-9643-417f-9974-ad72cae0e10f"
+        }
+      ]
+    }
+  }
+]

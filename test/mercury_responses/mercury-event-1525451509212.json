@@ -1,0 +1,64 @@
+{
+  "id": "12",
+  "data": {
+    "activity": {
+      "id": "d9a276c0-4fb8-11e8-8b93-61c49ca4573b",
+      "objectType": "activity",
+      "url":
+        "https://conv-a.wbx2.com/conversation/api/v1/activities/d9a276c0-4fb8-11e8-8b93-61c49ca4573b",
+      "published": "2018-05-04T16:33:17.868Z",
+      "verb": "post",
+      "actor": {
+        "id": "8f01d745-81f4-465b-afe6-905b61065c75",
+        "objectType": "person",
+        "displayName": "Samurai (bot)",
+        "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+        "emailAddress": "samurai@sparkbot.io",
+        "entryUUID": "8f01d745-81f4-465b-afe6-905b61065c75",
+        "type": "ROBOT",
+        "entryEmail": "samurai@sparkbot.io"
+      },
+      "object": {
+        "objectType": "comment",
+        "content":
+          "<p>Answer <spark-mention data-object-type=\"person\" data-object-id=\"d88bd75e-b8c3-48cf-abc7-5ec5cbc758ac\">Aman Chhabra</spark-mention>'s ? <a href=\"https://cef9b6cb.ngrok.io/#/space/Y2lzY29zcGFyazovL3VzL1JPT00vY2RkODlhOTAtNGFmZi0xMWU3LWFmMGYtYmY2MmU0OTM5YmEz\" rel=\"nofollow\">here</a> or with: <code>@Samurai /a 3 [your response].</code></p>",
+        "displayName":
+          "Answer Aman Chhabra's ? here or with: @Samurai /a 3 [your response].",
+        "markdown":
+          "eyJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiZGlyIn0..2YpI74WcwmyzyNZK.mUIugBmhKHtkLD5503Zol_iV_6NzxC5zVaPMtHAukA-ILZY2lKh72wKvlrdr1hvoMH9FLUzSQHZZZYvq6khgDLkXjG1OSXj6qAojOAaOYsK7irSng9fTVzI2FDtVg2bYNc1o6kIok40XnMMDs3UYfQzRxkfWbsUiTmY9p3QNy2DE9OvokCvJ5kA3ZEB5CWJVB79oZU8zVEtvdpO0-ltWluTQt8ttQdKL_ARGaSBq7Qw5Gi1L4Dij750Z88SS4V3_w580YY1H-iASIp8BOZ5RIE1Dch8T00gRLOBX4o6MAT8MEopp8JXATqocJ7XW0fEPNe4-8lVnK23FDJdgWXgAxspJ3e0gaCCF3g2jWtOVzWP2WdQOkYZ5puQMIfZdxYY_ZNEdaZAWE4Rdvh9ecVXXS6Wq4w.kdQDnGpY5bg_tODaW4Dnrg",
+        "mentions": {
+          "items": [
+            {
+              "id": "d88bd75e-b8c3-48cf-abc7-5ec5cbc758ac",
+              "objectType": "person"
+            }
+          ]
+        }
+      },
+      "target": {
+        "id": "cdd89a90-4aff-11e7-af0f-bf62e4939ba3",
+        "objectType": "conversation",
+        "url":
+          "https://conv-a.wbx2.com/conversation/api/v1/conversations/cdd89a90-4aff-11e7-af0f-bf62e4939ba3",
+        "participants": { "items": [] },
+        "activities": { "items": [] },
+        "tags": ["LOCKED"]
+      },
+      "encryptionKeyUrl":
+        "kms://cisco.com/keys/38ff918d-a0e5-4448-94d1-b559e6c06aad",
+      "vectorCounters": { "sourceDC": "a6", "counters": { "a6": 127, "a7": 0 } }
+    },
+    "eventType": "conversation.activity"
+  },
+  "timestamp": 1525451597928,
+  "trackingId": "spark-js-sdk_a7cd2c44-f1d2-48fd-9c5e-1b0042ce10da_10",
+  "alertType": "none",
+  "headers": {
+    "data.activity.target.lastReadableActivityDate": "2018-05-04T16:33:17.868Z",
+    "data.activity.target.lastSeenActivityDate": "2018-05-04T16:33:17.868Z",
+    "data.activity.target.lastSeenActivityUUID":
+      "d9a276c0-4fb8-11e8-8b93-61c49ca4573b"
+  },
+  "sequenceNumber": 17,
+  "filterMessage": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "a37b94b1-d2d6-3768-9ce8-04b19b941f96",
+  "objectType": "conversation",
+  "url":
+    "https://conv-a.wbx2.com/conversation/api/v1/conversations/a37b94b1-d2d6-3768-9ce8-04b19b941f96",
+  "published": "2016-08-16T19:59:34.425Z",
+  "participants": { "items": [] },
+  "activities": { "items": [] },
+  "tags": ["ONE_ON_ONE"],
+  "locusUrl":
+    "https://locus-a.wbx2.com/locus/api/v1/loci/01078bc9-07a4-38ea-b2c1-d24746482513",
+  "defaultActivityEncryptionKeyUrl":
+    "kms://cisco.com/keys/7f8bf80d-fa37-4179-8393-ef94dd41f840",
+  "encryptionKeyUrl":
+    "kms://cisco.com/keys/7f8bf80d-fa37-4179-8393-ef94dd41f840",
+  "conversationWebUrl":
+    "https://web.ciscospark.com/#/rooms/a37b94b1-d2d6-3768-9ce8-04b19b941f96",
+  "creatorUUID": "d88bd75e-b8c3-48cf-abc7-5ec5cbc758ac",
+  "lastRelevantActivityDate": "2018-05-02T17:03:44.277Z",
+  "lastRelevantActivityTtl": 604800,
+  "lastSeenActivityDate": "2018-04-19T06:50:13.818Z",
+  "monitorBots": {
+    "items": [
+      {
+        "id": "f2efdf6a-e7f4-43fa-9cb3-0ad291840030",
+        "objectType": "person",
+        "displayName": "Cisco Security",
+        "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+        "emailAddress": "spark-cisco-it-admin-bot@cisco.com",
+        "entryUUID": "f2efdf6a-e7f4-43fa-9cb3-0ad291840030",
+        "type": "BOT"
+      }
+    ]
+  },
+  "lastReadableActivityDate": "2018-05-02T17:03:44.277Z",
+  "lastJoinedDate": "2016-08-16T19:59:35.137Z",
+  "kmsResourceObjectUrl":
+    "kms://cisco.com/resources/e71ca9ab-8589-43fe-a172-d4be34328ced",
+  "aclUrl":
+    "https://acl-a.wbx2.com/acl/api/v1/acls/a37b94b1-d2d6-3768-9ce8-04b19b941f96",
+  "retentionUrl":
+    "https://conv-a.wbx2.com/conversation/api/v1/retention/organization/1eb65fdf-9643-417f-9974-ad72cae0e10f",
+  "userPreferences": {},
+  "organizationPolicies": {
+    "items": [
+      {
+        "id": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+        "objectType": "organizationPolicy",
+        "displayName": "Cisco Systems, Inc.",
+        "role": "owner",
+        "access": { "read": "all", "delete": "all" },
+        "retentionUrl":
+          "https://conv-a.wbx2.com/conversation/api/v1/retention/organization/1eb65fdf-9643-417f-9974-ad72cae0e10f"
+      }
+    ]
+  }
+}

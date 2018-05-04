@@ -1,0 +1,35 @@
+{
+  "id": "c56edc50-4e2a-11e8-9c39-491738ff8979",
+  "objectType": "activity",
+  "url":
+    "https://conv-a.wbx2.com/conversation/api/v1/activities/c56edc50-4e2a-11e8-9c39-491738ff8979",
+  "published": "2018-05-02T17:03:44.277Z",
+  "verb": "post",
+  "actor": {
+    "id": "d88bd75e-b8c3-48cf-abc7-5ec5cbc758ac",
+    "objectType": "person",
+    "displayName": "Aman Chhabra",
+    "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+    "emailAddress": "amachhab@cisco.com",
+    "entryUUID": "d88bd75e-b8c3-48cf-abc7-5ec5cbc758ac",
+    "type": "PERSON",
+    "entryEmail": "amachhab@cisco.com"
+  },
+  "object": { "objectType": "comment", "displayName": "hello" },
+  "target": {
+    "id": "a37b94b1-d2d6-3768-9ce8-04b19b941f96",
+    "objectType": "conversation",
+    "url":
+      "https://conv-a.wbx2.com/conversation/api/v1/conversations/a37b94b1-d2d6-3768-9ce8-04b19b941f96",
+    "participants": { "items": [] },
+    "activities": { "items": [] },
+    "tags": ["ONE_ON_ONE"]
+  },
+  "clientTempId": "d30853a8-d939-4c30-a2cc-007b3a27a7ff",
+  "encryptionKeyUrl":
+    "kms://cisco.com/keys/7f8bf80d-fa37-4179-8393-ef94dd41f840",
+  "vectorCounters": {
+    "sourceDC": "a6",
+    "counters": { "a1": 0, "a2": 0, "a6": 109 }
+  }
+}

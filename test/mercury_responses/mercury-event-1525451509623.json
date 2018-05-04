@@ -1,0 +1,51 @@
+{
+  "id": "13",
+  "data": {
+    "activity": {
+      "id": "d9e6d2c0-4fb8-11e8-97fa-8151965df481",
+      "objectType": "activity",
+      "url":
+        "https://conv-a.wbx2.com/conversation/api/v1/activities/d9e6d2c0-4fb8-11e8-97fa-8151965df481",
+      "published": "2018-05-04T16:33:18.316Z",
+      "verb": "acknowledge",
+      "actor": {
+        "id": "d88bd75e-b8c3-48cf-abc7-5ec5cbc758ac",
+        "objectType": "person",
+        "displayName": "Aman Chhabra",
+        "orgId": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+        "emailAddress": "amachhab@cisco.com",
+        "entryUUID": "d88bd75e-b8c3-48cf-abc7-5ec5cbc758ac",
+        "type": "PERSON",
+        "entryEmail": "amachhab@cisco.com"
+      },
+      "object": {
+        "id": "d9a276c0-4fb8-11e8-8b93-61c49ca4573b",
+        "objectType": "activity",
+        "url":
+          "https://conv-a.wbx2.com/conversation/api/v1/activities/d9a276c0-4fb8-11e8-8b93-61c49ca4573b",
+        "published": "2018-05-04T16:33:17.868Z"
+      },
+      "target": {
+        "id": "cdd89a90-4aff-11e7-af0f-bf62e4939ba3",
+        "objectType": "conversation",
+        "url":
+          "https://conv-a.wbx2.com/conversation/api/v1/conversations/cdd89a90-4aff-11e7-af0f-bf62e4939ba3",
+        "participants": { "items": [] },
+        "activities": { "items": [] },
+        "tags": ["LOCKED"]
+      }
+    },
+    "eventType": "conversation.activity"
+  },
+  "timestamp": 1525451598344,
+  "trackingId": "CLIENT_3bbf6102-2d20-435e-85f8-ec3ff11dbdc6",
+  "alertType": "none",
+  "headers": {
+    "data.activity.target.lastReadableActivityDate": "2018-05-04T16:33:17.868Z",
+    "data.activity.target.lastSeenActivityDate": "2018-05-04T16:33:17.868Z",
+    "data.activity.target.lastSeenActivityUUID":
+      "d9a276c0-4fb8-11e8-8b93-61c49ca4573b"
+  },
+  "sequenceNumber": 18,
+  "filterMessage": false
+}

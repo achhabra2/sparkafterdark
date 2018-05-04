@@ -1,2 +1,2 @@
-const SparkAfterDark = require('./sparkafterdark');
+const SparkAfterDark = require("./class");
 module.exports = SparkAfterDark;

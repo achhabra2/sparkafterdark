@@ -6,12 +6,20 @@
   "author": "ryweddle",
   "license": "MIT",
   "dependencies": {
+    "@ciscospark/internal-plugin-board": "^1.31.1",
+    "@ciscospark/internal-plugin-conversation": "^1.31.1",
+    "@ciscospark/internal-plugin-mercury": "^1.31.1",
+    "@ciscospark/spark-core": "^1.31.1",
+    "ciscospark": "^1.31.1",
     "dotenv": "^5.0.1",
-    "superagent": "^3.8.2"
+    "lodash": "^4.17.10",
+    "superagent": "^3.8.2",
+    "uuid": "^3.2.1"
   },
   "scripts": {
     "test": "nyc --reporter=html --reporter=text mocha ./test/",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "repl": "node src/repl.js"
   },
   "devDependencies": {
     "chai": "^4.1.2",

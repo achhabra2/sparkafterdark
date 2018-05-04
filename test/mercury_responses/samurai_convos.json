@@ -1,0 +1,41 @@
+[
+  {
+    "id": "a37b94b1-d2d6-3768-9ce8-04b19b941f96",
+    "url":
+      "https://conv-a.wbx2.com/conversation/api/v1/conversations/a37b94b1-d2d6-3768-9ce8-04b19b941f96",
+    "aclUrl":
+      "https://acl-a.wbx2.com/acl/api/v1/acls/a37b94b1-d2d6-3768-9ce8-04b19b941f96"
+  },
+  {
+    "id": "cdd89a90-4aff-11e7-af0f-bf62e4939ba3",
+    "displayName": "new test samurai space",
+    "url":
+      "https://conv-a.wbx2.com/conversation/api/v1/conversations/cdd89a90-4aff-11e7-af0f-bf62e4939ba3",
+    "aclUrl":
+      "https://acl-a.wbx2.com/acl/api/v1/acls/ce4b80a0-4aff-11e7-a5c6-fd601f36ed0a"
+  },
+  {
+    "id": "f58e6c60-39d1-11e8-8537-b15a33f91a47",
+    "displayName": "Another space",
+    "url":
+      "https://conv-a.wbx2.com/conversation/api/v1/conversations/f58e6c60-39d1-11e8-8537-b15a33f91a47",
+    "aclUrl":
+      "https://acl-a.wbx2.com/acl/api/v1/acls/f5cef7d0-39d1-11e8-910c-39966a4c3d2d"
+  },
+  {
+    "id": "be9a8450-3693-11e8-976d-e9171d175859",
+    "displayName": "Inquire Test Space",
+    "url":
+      "https://conv-a.wbx2.com/conversation/api/v1/conversations/be9a8450-3693-11e8-976d-e9171d175859",
+    "aclUrl":
+      "https://acl-a.wbx2.com/acl/api/v1/acls/bedc6f50-3693-11e8-94d9-45d64da411bc"
+  },
+  {
+    "id": "d7f8d730-d6df-11e7-8c2b-9794769b4f6c",
+    "displayName": "API Enterprise Samurai #SWSWSWN",
+    "url":
+      "https://conv-a.wbx2.com/conversation/api/v1/conversations/d7f8d730-d6df-11e7-8c2b-9794769b4f6c",
+    "aclUrl":
+      "https://acl-a.wbx2.com/acl/api/v1/acls/d82146c0-d6df-11e7-bca6-038262f0d483"
+  }
+]

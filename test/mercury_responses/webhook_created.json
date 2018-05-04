@@ -1,0 +1,33 @@
+{
+  "id":
+    "Y2lzY29zcGFyazovL3VzL1dFQkhPT0svMDM1MGMyOGUtMGYzNi00NTU4LWFhYzItMTdjYjY1ZTcxNzA5",
+  "name": "Samurai Webhook via Botkit",
+  "targetUrl": "https://cef9b6cb.ngrok.io/ciscospark/receive",
+  "resource": "messages",
+  "event": "created",
+  "orgId":
+    "Y2lzY29zcGFyazovL3VzL09SR0FOSVpBVElPTi8xZWI2NWZkZi05NjQzLTQxN2YtOTk3NC1hZDcyY2FlMGUxMGY",
+  "createdBy":
+    "Y2lzY29zcGFyazovL3VzL1BFT1BMRS84ZjAxZDc0NS04MWY0LTQ2NWItYWZlNi05MDViNjEwNjVjNzU",
+  "appId":
+    "Y2lzY29zcGFyazovL3VzL0FQUExJQ0FUSU9OL0MzMmM4MDc3NDBjNmU3ZGYxMWRhZjE2ZjIyOGRmNjI4YmJjYTQ5YmE1MmZlY2JiMmM3ZDUxNWNiNGEwY2M5MWFh",
+  "ownedBy": "creator",
+  "status": "active",
+  "created": "2018-03-12T00:26:02.308Z",
+  "actorId":
+    "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9kODhiZDc1ZS1iOGMzLTQ4Y2YtYWJjNy01ZWM1Y2JjNzU4YWM",
+  "data": {
+    "id":
+      "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvZDgwZDMwYzAtNGZiOC0xMWU4LWE5Y2ItYjc0Njg5NTczYWZk",
+    "roomId":
+      "Y2lzY29zcGFyazovL3VzL1JPT00vY2RkODlhOTAtNGFmZi0xMWU3LWFmMGYtYmY2MmU0OTM5YmEz",
+    "roomType": "group",
+    "personId":
+      "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9kODhiZDc1ZS1iOGMzLTQ4Y2YtYWJjNy01ZWM1Y2JjNzU4YWM",
+    "personEmail": "amachhab@cisco.com",
+    "mentionedPeople": [
+      "Y2lzY29zcGFyazovL3VzL1BFT1BMRS84ZjAxZDc0NS04MWY0LTQ2NWItYWZlNi05MDViNjEwNjVjNzU"
+    ],
+    "created": "2018-05-04T16:33:15.212Z"
+  }
+}
