@@ -59,26 +59,6 @@ function formatEvent(activity) {
   return event;
 }
 
-async function addEventData(event, activity, spark) {
-  if (event.resource === "memberships" && event.event !== "deleted") {
-    const response = await spark.memberships.list({
-      roomId: activity.target.id,
-      personEmail: activity.object.emailAddress
-    });
-    event.data = response.items[0];
-  }
-  if (event.resource === "rooms") {
-    const response = await spark.rooms.get(activity.target.id);
-    event.data = response.items[0];
-  }
-  return event;
-}
-
-async function handleIncomingEvent(activity, spark) {
-  const event = formatEvent(activity);
-  const finalEvent = await addEventData(event, activity, spark);
-  return finalEvent;
-}
 // // Space created
 // event.event = "created";
 // event.resource = "rooms";
@@ -88,8 +68,6 @@ async function handleIncomingEvent(activity, spark) {
 // event.resource = "messages";
 
 module.exports = {
-  handleIncomingEvent,
-  addEventData,
   formatEvent
 };
 

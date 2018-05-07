@@ -34,8 +34,8 @@ class BoardUtils extends AfterDarkBase {
   /**
    * Save Board by Board Channel
    *
-   * @param {any} channel
-   * @returns
+   * @param {any} channel Spark channel from mercury
+   * @returns {object} Board Contents JSON Object
    * @memberof BoardUtils
    */
   async save(channel) {
