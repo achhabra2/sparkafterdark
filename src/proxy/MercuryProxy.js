@@ -19,7 +19,7 @@ class MercuryProxy extends AfterDarkBase {
         // Uncomment if you want to save mercury response to JSON for debugging
         // const outputFileName = `mercury-event-${Date.now()}.json`;
         // fs.writeFileSync(outputFileName, JSON.stringify(event));
-        // console.log("Received Mercury Activity:", JSON.stringify(activity));
+        console.log("Received Mercury Activity:", JSON.stringify(activity));
 
         const webhookEvent = await handleIncomingEvent(activity, this.spark);
         console.log(JSON.stringify(webhookEvent));

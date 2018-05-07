@@ -6,9 +6,8 @@ const URI_LOCUS = "https://locus-a.wbx2.com/locus/api/v1/loci/";
 const URI_LOCUS_MEETINGINFO = "/meetingInfo";
 
 class MeetingInfo {
-  constructor(options) {
-    if (options && options.accessToken) this.accessToken = options.accessToken;
-    else throw new Error("Please provide an access token");
+  constructor(accessToken) {
+    this.accessToken = accessToken;
   }
 
   /*

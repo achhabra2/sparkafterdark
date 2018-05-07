@@ -10,24 +10,26 @@ function decodeBase64(base64) {
   base64 = base64
     .replace(/\-/g, "+") // Convert '-' to '+'
     .replace(/\_/g, "/"); // Convert '_' to '/'
-  return new Buffer(base64, "base64");
+  let buff = Buffer.from(base64, "base64").toString("utf-8");
+  return buff;
 }
 
 /**
  *
  *
- * @param {any} buffer
+ * @param {string} message string to be encoded
  * @returns {string} Encoded base64
  */
-function encodeBase64(buffer) {
+function encodeBase64(message) {
   // Add removed at end '='
-  var message = buffer.toString("base64");
-  message = message
+  let buff = Buffer.from(message);
+  var b64str = buff.toString("base64");
+  b64str = b64str
     .replace(/\+/g, "-")
     .replace(/\//g, "_")
     .replace(/\=/g, "");
 
-  return message;
+  return b64str;
 }
 
 function locusUrlToId(locusUrl) {
