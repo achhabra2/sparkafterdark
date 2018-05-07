@@ -18,11 +18,16 @@ const Proxy = require("./proxy");
 const Whiteboard = require("./whiteboard");
 
 /**
- * Main Class
+ * Main class that wraps all utilities
  *
  * @class SparkAfterDark
  */
 class SparkAfterDark {
+  /**
+   * Creates an instance of SparkAfterDark.
+   * @param {string} accessToken Access Token string
+   * @memberof SparkAfterDark
+   */
   constructor(accessToken) {
     this.spark = new CiscoSpark({
       credentials: {
@@ -36,6 +41,12 @@ class SparkAfterDark {
     this.board = new Whiteboard(this.spark);
     this.utils = common.utils;
   }
+
+  /**
+   * Call to register device to cloud
+   *
+   * @memberof SparkAfterDark
+   */
   async init() {
     try {
       await this.spark.internal.device.register();
@@ -43,6 +54,12 @@ class SparkAfterDark {
       console.error(error);
     }
   }
+
+  /**
+   * Call to unregister device to cloud
+   *
+   * @memberof SparkAfterDark
+   */
   async close() {
     try {
       await this.spark.internal.device.unregister();

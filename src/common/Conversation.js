@@ -2,10 +2,24 @@ const { pick } = require("lodash");
 const utils = require("./utils");
 const AfterDarkBase = require("./AfterDarkBase");
 
+/**
+ * Conversation utilities class
+ *
+ * @class Conversation
+ * @extends {AfterDarkBase}
+ */
 class Conversation extends AfterDarkBase {
   constructor(spark) {
     super(spark);
   }
+
+  /**
+   * Wrapper method for listing available conversations.
+   * This is basically equivalent to a rooms list
+   *
+   * @returns {Array} conversation list
+   * @memberof Conversation
+   */
   async list() {
     try {
       let conversations = await this.spark.internal.conversation.list({
@@ -23,6 +37,13 @@ class Conversation extends AfterDarkBase {
     }
   }
 
+  /**
+   * Get conversation by roomId
+   *
+   * @param {string} roomId Spark roomId
+   * @returns {object} conversation object
+   * @memberof Conversation
+   */
   async get(roomId) {
     const conversation = {};
     conversation.id = utils.roomToConversationId(roomId);

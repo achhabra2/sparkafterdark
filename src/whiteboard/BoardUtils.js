@@ -4,12 +4,23 @@ const uuid = require("uuid");
 
 const { AfterDarkBase } = require("../common");
 
+/**
+ *
+ *
+ * @class BoardUtils
+ * @extends {AfterDarkBase}
+ */
 class BoardUtils extends AfterDarkBase {
   constructor(spark) {
     super(spark);
   }
 
-  // List Available Boards by Conversation
+  /**
+   * List Available Boards by Conversation
+   *
+   * @param {any} conversation
+   * @memberof BoardUtils
+   */
   async list(conversation) {
     const boards = await this.spark.internal.board.getChannels(conversation);
     each(boards.items, board => {
@@ -20,7 +31,13 @@ class BoardUtils extends AfterDarkBase {
     });
   }
 
-  // Save Board by Board Channel
+  /**
+   * Save Board by Board Channel
+   *
+   * @param {any} channel
+   * @returns
+   * @memberof BoardUtils
+   */
   async save(channel) {
     const outputFileName = `${Date.now()}.json`;
     const contents = await this.spark.internal.board.getContents(channel);

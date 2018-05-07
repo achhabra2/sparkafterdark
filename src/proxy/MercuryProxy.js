@@ -2,6 +2,12 @@ const fs = require("fs");
 const { AfterDarkBase } = require("../common");
 const { handleIncomingEvent } = require("./eventHandlers");
 
+/**
+ * Class for websocket to chat bot proxy
+ *
+ * @class MercuryProxy
+ * @extends {AfterDarkBase}
+ */
 class MercuryProxy extends AfterDarkBase {
   constructor(spark) {
     super(spark);
@@ -9,6 +15,8 @@ class MercuryProxy extends AfterDarkBase {
       "event:conversation.activity",
       async event => {
         const { activity } = event.data;
+
+        // Uncomment if you want to save mercury response to JSON for debugging
         // const outputFileName = `mercury-event-${Date.now()}.json`;
         // fs.writeFileSync(outputFileName, JSON.stringify(event));
         // console.log("Received Mercury Activity:", JSON.stringify(activity));
@@ -20,6 +28,11 @@ class MercuryProxy extends AfterDarkBase {
     );
   }
 
+  /**
+   * Call to start the websocket proxy and disconnect from the cloud
+   *
+   * @memberof MercuryProxy
+   */
   async start() {
     try {
       await this.spark.internal.mercury.connect();
@@ -28,6 +41,11 @@ class MercuryProxy extends AfterDarkBase {
     }
   }
 
+  /**
+   * Call to stop the websocket proxy and disconnect from the cloud
+   *
+   * @memberof MercuryProxy
+   */
   async stop() {
     try {
       await this.spark.internal.mercury.disconnect();
