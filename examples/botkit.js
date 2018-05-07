@@ -65,14 +65,13 @@ dark.proxy.on("event", event => {
 });
 dark.init().then(() => dark.proxy.start());
 
-process.on("SIGINT", function() {
+process.on("SIGINT", async function() {
   console.log("Got SIGINT.  Press Control-D to exit.");
   try {
-    await dark.proxy.stop()
-    await dark.close()
-    console.log("Proxy stopped successfully.")
-  }
-  catch(error) {
-    console.error("Could not stop dark proxy. ")
+    await dark.proxy.stop();
+    await dark.close();
+    console.log("Proxy stopped successfully.");
+  } catch (error) {
+    console.error("Could not stop dark proxy. ");
   }
 });
