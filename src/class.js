@@ -29,10 +29,11 @@ class SparkAfterDark {
    * @memberof SparkAfterDark
    */
   constructor(accessToken) {
+    this.token = accessToken || process.env.ACCESS_TOKEN;
     this.spark = new CiscoSpark({
       credentials: {
         authorization: {
-          access_token: accessToken || process.env.ACCESS_TOKEN
+          access_token: this.token
         }
       }
     });
@@ -40,6 +41,7 @@ class SparkAfterDark {
     this.conversation = new common.Conversation(this.spark);
     this.board = new Whiteboard(this.spark);
     this.utils = common.utils;
+    this.meeting = new common.MeetingInfo(this.token);
   }
 
   /**
